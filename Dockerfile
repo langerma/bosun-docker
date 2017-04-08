@@ -27,4 +27,4 @@ EXPOSE 8070
 ENTRYPOINT ["/go/bin/bosun", "-c", "/etc/bosun.conf"]
 
 ADD bosun.toml /etc/bosun.toml
-ADD rules.config /etc/rules.config
+ADD rules.conf /etc/rules.conf
