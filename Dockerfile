@@ -24,7 +24,7 @@ USER bosun
 WORKDIR /var/cache/bosun/
 VOLUME /var/cache/bosun/
 EXPOSE 8070
-ENTRYPOINT ["/go/bin/bosun", "-c", "/etc/bosun.conf"]
+ENTRYPOINT ["/go/bin/bosun", "-c", "/etc/bosun.toml"]
 
 ADD bosun.toml /etc/bosun.toml
 ADD rules.conf /etc/rules.conf
